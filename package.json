@@ -1,0 +1,16 @@
+{
+  "name": "ejdict",
+  "version": "1.0.0",
+  "description": "English / Japanese dictionary",
+  "main": "lib",
+  "bin": {
+    "ejdict": "./bin/ejdict.js"
+  },
+  "repository": "git@github.com:FujiHaruka/node-ejdict.git",
+  "author": "FujiHaruka",
+  "license": "MIT",
+  "dependencies": {
+    "sequelize": "^4.22.15",
+    "sqlite3": "^3.1.13"
+  }
+}
