@@ -27,6 +27,17 @@ describe('search.js', () => {
     test('stopped', 'stop')
     test('runned', 'runned')
     test('hoped', 'hope')
+
+    test('playing', 'play')
+    test('loving', 'love')
+    test('running', 'run')
+
+    test('player', 'play')
+    test('lover', 'love')
+    test('runner', 'run')
+    test('liar', 'lie')
+    test('begger', 'beg')
+    test('actor', 'act')
   })
 
   it('search', async () => {
