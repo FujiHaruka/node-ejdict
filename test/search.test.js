@@ -38,6 +38,10 @@ describe('search.js', () => {
     test('liar', 'lie')
     test('begger', 'beg')
     test('actor', 'act')
+
+    test('apple', 'Apple')
+    test('APpLE', 'apple')
+    test('APpLE', 'Apple')
   })
 
   it('search', async () => {
