@@ -6,6 +6,9 @@
   "bin": {
     "ejdict": "./bin/ejdict.js"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": "git@github.com:FujiHaruka/node-ejdict.git",
   "author": "FujiHaruka",
   "license": "MIT",

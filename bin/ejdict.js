@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const {Dict} = require('../lib')
+const search = require('../lib')
 
 const word = process.argv[2]
 
@@ -11,17 +11,17 @@ Usage:
   process.exit()
 }
 
-Dict.findOne({
-  where: {
-    word
-  }
-}).then((result) => {
-  if (!result) {
+search(word).then((results) => {
+  if (results.length === 0) {
     console.log('Not found')
     return
   }
-  const {word, mean} = result
-  console.log(word)
-  console.log(new Array(word.length).fill('-').join(''))
-  console.log(mean.split('/').join('\n'))
+  const view = results.map(
+    ({word, mean}) => [
+      word,
+      new Array(word.length).fill('-').join(''),
+      mean.split('/').join('\n')
+    ].join('\n')
+  ).join('\n\n')
+  console.log(view)
 }).catch(console.error)
