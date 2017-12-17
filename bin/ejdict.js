@@ -11,7 +11,10 @@ Usage:
   process.exit()
 }
 
-search(word).then((results) => {
+ejdict(word)
+
+function ejdict (word) {
+  const results = search(word)
   if (results.length === 0) {
     console.log('Not found')
     return
@@ -24,4 +27,4 @@ search(word).then((results) => {
     ].join('\n')
   ).join('\n\n')
   console.log(view)
-}).catch(console.error)
+}

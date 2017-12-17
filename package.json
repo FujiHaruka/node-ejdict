@@ -12,7 +12,7 @@
   "repository": "git@github.com:FujiHaruka/node-ejdict.git",
   "author": "FujiHaruka",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "sequelize": "^4.22.15",
     "sqlite3": "^3.1.13"
   }
