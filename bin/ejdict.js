@@ -20,10 +20,10 @@ function ejdict (word) {
     return
   }
   const view = results.map(
-    ({word, mean}) => [
-      word,
-      new Array(word.length).fill('-').join(''),
-      mean.split('/').join('\n')
+    (result) => [
+      result.word,
+      new Array(result.word.length).fill('-').join(''),
+      result.mean.split('/').join('\n')
     ].join('\n')
   ).join('\n\n')
   console.log(view)
